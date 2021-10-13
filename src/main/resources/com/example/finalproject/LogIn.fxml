@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.*?>
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0"
+      prefWidth="900.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/16"
+      xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.finalproject.LogInController">
+    <children>
+        <ImageView fitHeight="600.0" fitWidth="900.0" layoutY="37.0" nodeOrientation="INHERIT" pickOnBounds="true"
+                   preserveRatio="true">
+            <image>
+                <Image url="@LogIn.jpg"/>
+            </image>
+        </ImageView>
+        <Label fx:id="heading" alignment="TOP_CENTER" layoutX="256.0" layoutY="106.0" text="Login to User Account">
+            <font>
+                <Font name="Bell MT Bold" size="40.0"/>
+            </font>
+        </Label>
+        <TextField fx:id="UserName" alignment="CENTER" layoutX="321.0" layoutY="234.0" prefHeight="39.0"
+                   prefWidth="309.0" style="-fx-border-color: #000000;">
+            <font>
+                <Font name="Bell MT Bold" size="18.0"/>
+            </font>
+            <effect>
+                <DropShadow blurType="GAUSSIAN">
+                    <color>
+                        <Color green="0.025263158604502678" blue="0.031578946858644485"/>
+                    </color>
+                </DropShadow>
+            </effect>
+        </TextField>
+        <ImageView fitHeight="32.0" fitWidth="33.0" layoutX="274.0" layoutY="237.0" pickOnBounds="true"
+                   preserveRatio="true">
+            <image>
+                <Image url="@user.png"/>
+            </image>
+        </ImageView>
+        <ImageView fitHeight="39.0" fitWidth="32.0" layoutX="274.0" layoutY="308.0" pickOnBounds="true"
+                   preserveRatio="true">
+            <image>
+                <Image url="@lock.png"/>
+            </image>
+        </ImageView>
+        <Button alignment="CENTER" layoutX="373.0" layoutY="366.0" mnemonicParsing="false" onAction="#userlogin"
+                prefHeight="32.0" prefWidth="185.0" style="-fx-background-color: #000000;" text="LOGIN"
+                textFill="WHITE">
+            <font>
+                <Font size="16.0"/>
+            </font>
+            <effect>
+                <DropShadow blurType="GAUSSIAN" height="12.0" radius="5.5" width="12.0"/>
+            </effect>
+        </Button>
+        <PasswordField fx:id="UserPassword" alignment="CENTER" layoutX="321.0" layoutY="303.0" prefHeight="39.0"
+                       prefWidth="309.0" style="-fx-border-color: #000000;">
+            <font>
+                <Font name="Bell MT Bold" size="18.0"/>
+            </font>
+            <effect>
+                <DropShadow blurType="GAUSSIAN">
+                    <color>
+                        <Color green="0.0235294122248888" blue="0.0313725508749485"/>
+                    </color>
+                </DropShadow>
+            </effect>
+        </PasswordField>
+        <Button fx:id="au" layoutX="426.0" layoutY="410.0" mnemonicParsing="false" onAction="#adminLog"
+                style="-fx-background-color: #ffffff;" text="Login as admin" underline="true">
+            <font>
+                <Font size="10.0"/>
+            </font>
+        </Button>
+    </children>
+</Pane>
